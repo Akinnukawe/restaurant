@@ -1,0 +1,83 @@
+.body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(120deg, #fa8556, #8a2b06);
+    /* background: #8a2b06; */
+    overflow: hidden;
+}
+
+.pos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.pos h2{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+}
+
+.pos form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.control{
+    position: relative;
+    border-bottom: 2px solid #fa8556;
+    margin: 30px 0;
+}
+
+.control input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.control label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.control input:focus ~ label,
+.control input:valid ~ label{
+    top: -5px;
+    color: #fa8556;
+}
+
+.simple{
+    display: block;
+}
+.focused {
+    top: -5px;
+    color: #fa8556;
+}
+
+.pos button{
+    height: 50px;
+    width: 80%;
+    border: 1px solid;
+    margin-left: 19px;
+    margin-bottom: 20px;
+    background: #fa8556;
+    border-radius: 25px;
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
